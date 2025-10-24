@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebu City Route Guide</title>
+
+    <style>
+
+        .logout-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(12, 1, 1);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: rgb(197, 20, 20);
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .main-title {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 180px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .description {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .guide-btn {
+            margin-top: 15px;
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+
+        /* GRID 3 ROWS 2 COLUMNS */
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .destination-box {
+            display: block;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border: 2px solid black;
+        }
+
+        /* RESPONSIVE FOR MOBILE */
+        @media (max-width: 768px) {
+            .destinations {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="login.html" class="logout-btn">Logout</a>
+
+    <div class="container">
+
+        <div class="main-title">Welcome to the Cebu City Route Guide!</div>
+
+        <div class="content">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFHVfHJWsl04gOoQeRLHNoa0e17sIMFWF2VZT0P4hAFGLXu-qO" alt="Jeepney">
+            <div class="description">
+                <p>Planning to explore Cebu? We've got you covered!
+This guide will help you find the jeepney routes that'll take you anywhere in the city, from bustling markets to beautiful landmarks. Just pick your destination, and we'll show you the best routes to get there.
+Happy travels and see you on the road!</p>
+                <button class="guide-btn">🚌 Bus Guide and Jeep Guide</button>
+                <p class="info-text">Click the Available Destination you want! Choose your Desired Destination.</p>
+            </div>
+        </div>
+
+        <!-- ✅ 3 ROWS --- 2 COLUMNS -->
+        <div class="destinations">
+            <a href="colon.html" class="destination-box" style="background-color:#26e6ff; color:black;">📍 Destination: Colon Street</a>
+            <a href="smcity.html" class="destination-box" style="background-color:#4d89ff;">📍 Destination: SM City Cebu</a>
+            <a href="mandaue.html" class="destination-box" style="background-color:#c217ff;">📍 Destination: Mandaue City</a>
+            <a href="ayala.html" class="destination-box" style="background-color:#375c69;">📍 Destination: Ayala Center Cebu</a>
+            <a href="lahug.html" class="destination-box" style="background-color:#ffd675; color:black;">📍 Destination: Lahug Cebu City</a>
+            <a href="banilad.html" class="destination-box" style="background-color:#d79b52; color:black;">📍 Destination: Banilad Cebu City</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

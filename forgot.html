@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    form {
+      border: 3px solid #f1f1f1;
+      max-width: 400px;
+      margin: auto;
+    }
+    img.avatar {
+      width: 30%;
+      border-radius: 15%;
+    }
+    .imgcontainer {
+      text-align: center;
+      margin: 10px 0 12px 0;
+    }
+    .container {
+      padding: 16px;
+      text-align: center;
+    }
+    input[type=text], input[type=email] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .link-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Forgot Password</title>
+</head>
+<body>
+
+<form id="forgotForm">
+  <div class="imgcontainer">
+    <img src="https://t4.ftcdn.net/jpg/01/24/65/69/360_F_124656969_x3y8YVzvrqFZyv3YLWNo6PJaC88SYxqM.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Enter your email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <button type="submit">Reset Password</button>
+  </div>
+
+  <div class="link-container">
+    <p>Remembered your password? <a href="index.html">Go back to login</a></p>
+  </div>
+</form>
+
+<script>
+
+  const form = document.getElementById("forgotForm");
+
+ 
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    
+    form.innerHTML = `
+      <div class="container" style="text-align:center; padding:30px;">
+        <h2 style="color:green;">Thank you!</h2>
+        <p>You may check your email now.</p>
+        <p><a href="login.html">Go back to login</a></p>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>

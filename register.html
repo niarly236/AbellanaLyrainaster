@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    form {
+      border: 3px solid #f1f1f1;
+      max-width: 400px;
+      margin: auto;
+    }
+    img.avatar {
+      width: 30%;
+      border-radius: 15%;
+    }
+    .imgcontainer {
+      text-align: center;
+      margin: 10px 0 12px 0;
+    }
+    .container {
+      padding: 16px;
+      text-align: center;
+    }
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    .link-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Register Form</title>
+</head>
+<body>
+
+<form id="registerForm">
+  <div class="imgcontainer">
+    <img src="https://t4.ftcdn.net/jpg/01/24/65/69/360_F_124656969_x3y8YVzvrqFZyv3YLWNo6PJaC88SYxqM.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="link-container">
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+</form>
+
+<script>
+  
+  const form = document.getElementById("registerForm");
+
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    alert("You're registered!"); 
+  });
+</script>
+
+</body>
+</html>
